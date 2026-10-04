@@ -1,6 +1,8 @@
 let form = document.querySelector("form");
 let input = document.querySelectorAll("input");
 let main = document.querySelector("#main");
+let cards = document.querySelector("#cards");
+let product = document.querySelector(".product");
 form.addEventListener("submit", function (dets) {
     dets.preventDefault();
 
@@ -25,7 +27,7 @@ form.addEventListener("submit", function (dets) {
     card.appendChild(h5);
     card.appendChild(p);
     
-    main.appendChild(card);
+    product.appendChild(card);
 
     input.forEach(function(inp){
         if(inp.type !== "submit"){
